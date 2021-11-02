@@ -3,8 +3,9 @@ package ooo.marto.minesweeper;
 public class Minefield {
 
     private final int WIDTH, HEIGHT;
-    private int totalMines, minesLeft;
-    private boolean[][] mines, discoveredTiles, flagTiles;
+    private final int totalMines;
+    private int minesLeft;
+    private final boolean[][] mines, discoveredTiles, flagTiles;
 
     public Minefield(int width, int height, int totalMines) {
         WIDTH = width;
